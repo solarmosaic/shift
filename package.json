@@ -1,0 +1,39 @@
+{
+  "name": "shift",
+  "version": "1.0.0",
+  "description": "Shift is a static site generator for Handlebars.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/solarmosaic/shift"
+  },
+  "author": {
+    "name": "Solar Mosaic, Inc.",
+    "email": "support@solarmosaic.com",
+    "url": "http://solarmosaic.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/solarmosaic/shift/issues"
+  },
+  "homepage": "https://github.com/solarmosaic/shift",
+  "dependencies": {
+    "gulp-data-json": "^0.1.0",
+    "gulp-data-matter": "^0.1.1",
+    "gulp-hb": "^2.6.1",
+    "gulp-htmltidy": "^0.2.2",
+    "gulp-nav": "^0.1.11",
+    "gulp-pretty-url": "^0.1.1",
+    "lodash.merge": "^3.3.2",
+    "stream-combiner": "^0.2.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^0.3.1",
+    "gulp": "^3.9.0",
+    "handlebars-layouts": "^3.1.0",
+    "mosaic-gulp-task-clean": "^1.0.1"
+  }
+}

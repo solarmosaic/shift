@@ -1,0 +1,10 @@
+# Directories
+.idea
+bower_components
+node_modules
+public
+
+# Files
+*.log
+*.iml
+*.sublime*

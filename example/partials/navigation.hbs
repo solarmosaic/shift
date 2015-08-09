@@ -1,0 +1,10 @@
+<ul>
+  {{#each children}}
+    <li class="item-{{lowercase title}}{{#if active}} active{{/if}}">
+      <a href="{{href}}">{{title}}</a>
+      {{#if children}}
+        {{> navigation this}}
+      {{/if}}
+    </li>
+  {{/each}}
+</ul>
