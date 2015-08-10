@@ -4,11 +4,8 @@ var gulp = require("gulp");
 var path = require("path");
 var shift = require("./index");
 
-// Remove everything in the public folder in preparation for a new build
-gulp.task("clean", clean("public"));
-
 // Generate the static site
-gulp.task("default", ["clean"], function() {
+gulp.task("build", ["clean"], function() {
   return gulp.src("example/views/**/*.hbs")
     .pipe(shift({
       hb: {
@@ -20,7 +17,15 @@ gulp.task("default", ["clean"], function() {
     .pipe(gulp.dest("public"));
 });
 
+// Remove everything in the public folder in preparation for a new build
+gulp.task("clean", clean("public"));
+
+// By default, build the site anytime a source file changes.
+gulp.task("default", ["build"], function() {
+  gulp.watch("example/**/*", ["build"]);
+});
+
 // deploy the public folder to gh-pages
-gulp.task("deploy", ["default"], function(cb) {
+gulp.task("deploy", ["build"], function(cb) {
   ghpages.publish(path.join(process.cwd(), "public"), cb);
 });
