@@ -2,7 +2,7 @@
 
 Shift is a static site generator for [Handlebars](http://handlebarsjs.com/). It is, in essence, a simple wrapper for a
 handful of underlying libraries which allows for easy compilation of Handlebars templates into static HTML files using
-[Gulp][http://gulpjs.com/].
+[Gulp](http://gulpjs.com/).
 
 ## Install
 
@@ -24,10 +24,10 @@ gulp.task("build", function() {
 
 An example build which uses [handlebars-layouts](https://github.com/shannonmoeller/handlebars-layouts) can be found in
 this repository:
-- [Source files]()
-- [Gulpfile.js]()
-- [Output]()
-- [Live example of output]()
+- [Source files](https://github.com/solarmosaic/shift/tree/master/example)
+- [Gulpfile.js](https://github.com/solarmosaic/shift/blob/master/gulpfile.js)
+- [Output](https://github.com/solarmosaic/shift/tree/gh-pages)
+- [Live example of output](http://solarmosaic.github.io/shift/)
 
 ### Data
 

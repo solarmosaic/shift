@@ -1,5 +1,7 @@
 var clean = require("mosaic-gulp-task-clean");
+var ghpages = require("gh-pages");
 var gulp = require("gulp");
+var path = require("path");
 var shift = require("./index");
 
 // Remove everything in the public folder in preparation for a new build
@@ -16,4 +18,9 @@ gulp.task("default", ["clean"], function() {
       }
     }))
     .pipe(gulp.dest("public"));
+});
+
+// deploy the public folder to gh-pages
+gulp.task("deploy", ["default"], function(cb) {
+  ghpages.publish(path.join(process.cwd(), "public"), cb);
 });
