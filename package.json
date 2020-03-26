@@ -31,7 +31,7 @@
     "stream-combiner": "^0.2.2"
   },
   "devDependencies": {
-    "gh-pages": "^0.3.1",
+    "gh-pages": "^2.2.0",
     "gulp": "^3.9.0",
     "handlebars-layouts": "^3.1.0",
     "mosaic-gulp-task-clean": "^1.0.1"
